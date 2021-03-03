@@ -1,0 +1,87 @@
+svg {
+  background-color: skyblue;
+}
+
+#house_bottom {
+  fill: rgb(223, 217, 166);
+}
+
+#roof {
+  fill: rgb(168, 60, 60);
+}
+
+#grass {
+  fill: darkgreen;
+}
+
+#sidewalk {
+  fill: lightgrey;
+}
+
+#road {
+  fill: rgb(44, 44, 44);
+}
+
+#flower_stalk {
+  stroke: greenyellow;
+}
+
+#mid_flower {
+  fill: yellow;
+}
+
+#peddle_1,
+#peddle_2,
+#peddle_3,
+#peddle_4,
+#peddle_5,
+#peddle_6,
+#peddle_7 {
+  fill: palevioletred;
+}
+
+#car {
+  animation: drive 4s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+#car_bottom,
+#car_top {
+  fill: rgb(59, 56, 112);
+}
+
+#car_window {
+  fill: azure;
+}
+
+#front_wheel,
+#back_wheel {
+  fill: rgb(0, 0, 0);
+}
+
+#flower {
+  animation: rotate 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+/***ANIMATIONS***/
+
+@keyframes drive {
+  from {
+    transform: translateX(-70vw);
+  }
+  to {
+    transform: translateX(50vw);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
